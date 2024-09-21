@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@300&display=swap');
+
+.App {
+  color: #004c54;
+  text-align: center;
+  background: white;
+  min-height: 100vh;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.navbar {
+background: #004c54;
+}
+
+
+
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+
+.App-header {
+
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
