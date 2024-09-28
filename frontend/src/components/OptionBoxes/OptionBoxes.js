@@ -2,8 +2,6 @@ import Button from 'react-bootstrap/Button';
 import {useState} from "react";
 import SearchModal from "../UI/SearchModal/SearchModal";
 
-
-
 const OptionBoxes = () => {
     const [displayModal, setDisplayModal] = useState(false)
     const [modalOption, setModalOption] = useState("")
@@ -21,7 +19,6 @@ const OptionBoxes = () => {
     const hideModalHandler = () => {
         setDisplayModal(false)
     }
-
 
     return (
         <div>

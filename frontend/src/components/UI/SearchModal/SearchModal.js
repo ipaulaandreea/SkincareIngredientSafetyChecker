@@ -9,6 +9,7 @@ import './SearchModal.css';
 
 const SearchModal = (props) => {
     const [ingredientsList, setIngredientsList] = useState("");
+    const [photoAddress, setPhotoAddress] = useState("");
     const [resultsPresent, setResultsPresent] = useState(false);
     const [results, setResults] = useState([]);
 
@@ -54,13 +55,14 @@ const SearchModal = (props) => {
                         <SearchByText setIngredientsList={setIngredientsList}/>
                     )}
                     {props.modalOption === "photo" && (
-                        <SearchByPhoto setIngredientsList={setIngredientsList}/>
+                        <SearchByPhoto setPhotoAddress={setPhotoAddress}/>
                     )}
                     {resultsPresent && <Results results={results}/>}
                 </Modal.Body>
 
                 <Modal.Footer>
                     <Button variant="secondary" style = {{marginRight: '15px', outline: 'none', border: 'none'}} onClick={props.onClose}>Close</Button>
+
                     <Button type="submit" style = {{background: '#004c54', outline: 'none', border: 'none'}} onClick={handleSubmit} variant="primary">Scan List</Button>
                 </Modal.Footer>
             </Modal.Dialog>
